@@ -1,0 +1,62 @@
+Name: HuggingFace Type: ML platform	Bioimage.io			DOME		
+Links: HuggingFace Datasets Guidelines Dataset Card Plain Dataset Card Template	Links: Bioimage.io			Links: DOME		
+Link to API	Link to API: https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/dataset_latest.md			Link to API		
+Link to metadata schema:	Link to metadata schema: https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/dataset_latest.md			Link to metadata schema:		
+Info added by: LJC	Mapping added by: Bianca, Fynn, Bea			Mapping added by: Sefika Efeoglu		
+Elements	Elements	Comments	Example	Elements	Comments	Example
+Category: Details						
+name	name	A human-friendly name of the resource description		NA	NA	NA
+summary	description			NA	NA	NA
+homepage				Dataset availability	Are the data, including the data splits used, released in a public forum? If yes, where (for example, supporting material, URL) and how (license)? How was this enforced (e.g. redundancy reduction to less than x% pairwise identity)?	http://archive.ics.uci.edu/ml/index.php
+natural language				NA	NA	NA
+tags	tags			NA	NA	NA
+supported/intended tasks				NA	NA	NA
+license	license			Dataset availability	1. Are the data, including the data splits used, released in a public forum? 2. If yes, where (for example, supporting material, URL) and how (license)? 3. How was this enforced (e.g. redundancy reduction to less than x% pairwise identity)?	http://archive.ics.uci.edu/ml/index.php
+contact	maintainer			NA	NA	NA
+curated by				Authors	Authors which contributes to the article	Martínez-García PM, García-Torres M, Divina F, Terrón-Bautista J, Delgado-Sainz I, Gómez-Vela F, Cortés-Ledesma F
+funded by				NA	NA	NA
+shared by	packaged by	creators of the metadata		NA	NA	NA
+Category: Dataset sources						
+repository where stored	source	The primary source of the dataset, could be the homepage	cremi.org	Dataset availability	1. Are the data, including the data splits used, released in a public forum? 2. If yes, where (for example, supporting material, URL) and how (license)? 3. How was this enforced (e.g. redundancy reduction to less than x% pairwise identity)?	http://archive.ics.uci.edu/ml/index.php
+paper where described/introduced				PubMed ID  DOI	Unique identifier of the reviewed article within PubMed DOI of the published article	PLoS Comput Biol 10.1371/journal.pcbi.1007814
+demo				NA	NA	NA
+Category: Uses						
+direct intended use				NA	NA	NA
+out-of-scope use				NA	NA	NA
+papers with code ID				NA	NA	NA
+Category: Dataset structure						
+size in bytes				NA	NA	NA
+number of elements				Dataset source	1.Source of the dataset? 2.Number of data points? 3.Data used in previous paper and/or by community?	Ecoli, Pima Indians Diabetes (Diabetes), Epileptic Seizure, Iris, Heart Disease, Glass Identification
+example of instances				NA	NA	NA
+field (name, description, type)				NA	NA	NA
+split training (bytes and num of examples)				Dataset splits	1. How many data splits? 2. How many data points in each split? 3. If number of data splits is greater than two (2), what where other splits? (e.g. cross-validation, validation set, independent test) 4. What is the distribution of data points in each data split? (e.g. number of + and - cases in classification or frequency distribution in regression)?	Breast Cancer train:98 val:50 test:50, Parkinson train:500 val:270 test:270,  SinC train:5000 val:2500 test:2500, Servo train:384 val:192 test:192,  Yacht Hydro train:150 val:79 test:79
+split testing (bytes and num of examples)				Dataset splits	1. How many data splits? 2. How many data points in each split? 3. If number of data splits is greater than two (2), what where other splits? (e.g. cross-validation, validation set, independent test) 4. What is the distribution of data points in each data split? (e.g. number of + and - cases in classification or frequency distribution in regression)?	Breast Cancer train:98 val:50 test:50, Parkinson train:500 val:270 test:270,  SinC train:5000 val:2500 test:2500, Servo train:384 val:192 test:192,  Yacht Hydro train:150 val:79 test:79
+split validation (bytes and num of examples)				Dataset splits	1. How many data splits? 2. How many data points in each split? 3. If number of data splits is greater than two (2), what where other splits? (e.g. cross-validation, validation set, independent test) 4. What is the distribution of data points in each data split? (e.g. number of + and - cases in classification or frequency distribution in regression)?	Breast Cancer train:98 val:50 test:50, Parkinson train:500 val:270 test:270,  SinC train:5000 val:2500 test:2500, Servo train:384 val:192 test:192,  Yacht Hydro train:150 val:79 test:79
+split other (name, bytes and num of examples)				Dataset splits	1. How many data splits? 2. How many data points in each split? 3. If number of data splits is greater than two (2), what where other splits? (e.g. cross-validation, validation set, independent test) 4. What is the distribution of data points in each data split? (e.g. number of + and - cases in classification or frequency distribution in regression)?	Breast Cancer train:98 val:50 test:50, Parkinson train:500 val:270 test:270,  SinC train:5000 val:2500 test:2500, Servo train:384 val:192 test:192,  Yacht Hydro train:150 val:79 test:79
+Category: Dataset creation						
+explanation on curation rationale				NA	NA	NA
+explanation on source data collection				NA	NA	NA
+explanation on source data preprocessing				NA	NA	NA
+source data producers				NA	NA	NA
+annotation process (e.g., crowd-source)				NA	NA	NA
+annotators				NA	NA	NA
+explanation on personal and sensitive information				NA	NA	NA
+Category: Considerations for Using the Data						
+social impact of the dataset				NA	NA	NA
+biases				NA	NA	NA
+risks				NA	NA	NA
+limitations				NA	NA	NA
+bias recommendations				NA	NA	NA
+citation text in bibtex	cite	text + doi + url. doi can be translated into bibtex or APA		NA	NA	NA
+citation text in APA	cite	text + doi + url. doi can be translated into bibtex or APA		NA	NA	NA
+Category: More information						
+where to find more information	documentation	markdown file		NA	NA	NA
+dataset card authors				NA	NA	NA
+dataset card contact				NA	NA	NA
+Specific fields						
+	format_version	the format version of the schema (not the dataset version)				
+	cover	cover images for display				
+	git_repo	sometimes there's code associated with the dataset	https://github.com/cremi/cremi_python			
+	bioimage_id	internal id  within bioimage.io				
+	links	links to other resources such as datasets, applications or models within bioimage.io				
+	version	verison number of the metadata (e.g.2.0.0)				

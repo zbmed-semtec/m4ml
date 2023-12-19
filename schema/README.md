@@ -1,0 +1,2 @@
+# Beta drafts
+Based on crosswalks, team discussions, previous experiences with metadata schemas, some beta drafts have been proposed. The idea with those is boosting the discussion towards a common metadata schema. 

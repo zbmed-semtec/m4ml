@@ -1,0 +1,82 @@
+Name: HuggingFace Type: ML platform	Schema.org			Bioimage.io			ONNX			DOME		
+Links: HuggingFace Model Card Template, https://huggingface.co/docs/hub/model-card-annotated (specification)	Links: https://schema.org			Links: Bioimage.io			Links: https://onnx.ai/onnx/repo-docs/Hub.html, https://onnx.ai/onnx/repo-docs/IR.html 			Links: DOME registry		
+Link to API:	Link to API:			Link to API:			Link to API:			Link to API: https://registry.dome-ml.org/api/ (work in progress)		
+Link to metadata schema: 	Link to metadata schema: https://schema.org/docs/developers.html 			Link to metadata schema: https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/dataset_latest.md			Link to metadata schema: 			Link to metadata schema: 		
+Info added by: Daniel Garijo	Mapping added by: Yue Zhang, Daniel Garijo			Mapping added by: Bianca, Fynn, Bea			Mapping added by: Kirubel Biruk Shiferaw			Mapping added by: Zongxiong Chen		
+Elements	Elements	Comments	Example	Elements	Comments	Example	Elements	Comments	Example	Elements	Comments	Example
+Category: Model Details												
+model_id	identifier	name and identifier are conflated in HF		bioimage_id	internal bioiamge.io identifier			Derives from domain				
+model_summary	headline											
+model_description	description	domain: CreativeWork		description			doc_strings			<new entry under DOME:Model> with Model:Interpretability as a sub-item?	(no direct mapping)	
+developers (developed by)	author	domain: CreativeWork		authors			model_author	This is an optional metadata		Publication:Authors		
+funded_by	funder	domain: CreativeWork. Attention! We have detected this in the model card but not in the specification. https://github.com/huggingface/hub-docs/issues/1122 										
+shared_by				packaged_by								
+model_type	additionalType, applicationCategory	domain: Thing. Model type is narrower than additional type	Examples include bert, llama							Model:Output	Always supervised for DOME	1) classification  2) regression
+language	inLanguage	Domain:CreativeWork										
+license	license	domain: CreativeWork		license			model_licence	This is also optional metadata		Model:Software availability	possibly available through that?	
+base_model (Fine tuned from model)	isBasedOn			parent	Used only for the fine tuning case					Optimization: Is the algorithm a meta-predictor?		
+	name	domain: CreativeWork		name	human-readable name of the model							
+	version	domain: CreativeWork		version	version number of the model (not the tools the model was developed with)							
+	keywords	domain: CreativeWork		tags	keywords, there are defined categories, but people can define new keywords							
+	dateIssued	domain: CreativeWork		timestamp	date when the model was added							
+		Other dates may apply (created/modified)										
+Category: Model Sources												
+repo	codeRepository	domain: SoftwareSourceCode		git_repo	might refer also to where the weights are stored? No clear from the "Repository" name					Modle:Software availability		
+paper	citation / referencePublication (codemeta)	domain: CreativeWork. In codemeta they have referencePublication 		cite	If you use this model cite all of these					Publication: Title, Publication: DOI, Publication: PubMedID		
+demo	workExample	maybe workExample?										
+Category: Uses												
+direct_use	usageInfo	domain: CreativeWork										
+downstream_use												
+out_of_scope_use												
+				inputs	Describes the input tensors expected by this model. Includes a sample input							
+				outputs	Describes the output tensors expected by this model. Includes a sample output							
+Category: Bias, Risks, limitations												
+bias_risks_limitations	maybe separate these											
+bias_recommendations												
+Category: Getting started												
+get_started_code	workExample	domain:CreativeWork. workExample is broader than get_started_code										
+Category: Training Details												
+training_data	to import from croissant	Look at Croissant (RecordSet)		training_data	link to bioimage.io dataset (internal linking). Whole dataset used for training process		Training_info			Dataset:Dataset source/Dataset:Input features/Dataset:Dataset availability		
+training method										Optimization:Optimization algorithm		
+preprocessing		we could have the range to be a pipeline (software application and text)								Optimization:Data encoding		
+training_regime (Hyperparameters)							functions			Optimization:Input Parameters/Optimization:Configuration available	To be added under this category, but different metadata: Optimization: Fitting method, Optimization: Regularization	
+speeds_sizes_times	Should be separated: duration of the training, size of the data (number of elements and bytes)									Model:Execution time	Clarify in HF documentation size of what, and speed	
+Category: Evaluation												
+testing_data				links						Dataset:Dataset splits		Dataset splitted in test set (N_pos = 158; N_neg = 309) and training set (N_pos = 383; N_neg = 592)
+testing_factors												
+testing_metrics										Evaluation:Peformance measures		
+results										Evaluation: Performance measures, Evaluation: Evaluation confidence, Evaluation: Evaluation availability	As a table, it would be a Dataset, link to it	
+results_summary										Evaluation:Evaluation availability		
+Category: Model examination												
+model_examination										Model:Interpretability		
+Category: Environmental Impact												
+hardware_type	additionalType											
+hours_used	duration	domain:Thing. duration is a property whose range is Duration (ISO8601)								Model:Execution time		
+cloud_provider	provider											
+cloud_region	itemLocation											
+co2_emitted	emissionsCO2	domain:Vehicle										
+Category: Technical specifications												
+ model_specs (model architecture and objective)										Optimization:Optimization algorithm	Partially	
+compute_infrastructure							Producer_name	Name of the tool used to generate the model				
+hardware_requirements	processorRequirements, storageRequirements, memoryRequiements	SoftwareApplication, both schema properties are more specific										
+software	softwareRequirements						Producer_name	Name of the tool used to generate the model				
+Category: Citation												
+citation_bibtex	citation	domain:CreativeWork		cite	text + doi + url. doi can be translated into bibtex or APA					Publication:*	(to be added to DOME?)	
+citation_APA	citation	domain:CreativeWork		cite	text + doi + url. doi can be translated into bibtex or APA					Publication:*	(to be added to DOME?)	
+Category: Other details												
+glossary												
+more_information				documentation	Link to documentation MD file		doc_strings, metadata_props					
+Category: Model card												
+model_card_authors	sdPublisher	Note: this is the metadata author		packaged_by / authors	authors are the model card authors if packaged by is not specified						Will be added: curator providing the info	
+model_card_contact				maintainer / authors	authors are the contact if no maintainer is specified							
+				If your platform has additional properties, add them below this line, in this column								
+												
+							ir_version: The ONNX version assumed by the model. producer_version: The version of the generating tool. model_version:The version of the model itself, encoded in an integer.			Dataset:Dataset redundancy		
+										Optimization:Fitting method		
+										Optimization:Regularization method		
+										Evaluation:Evaluation method		
+				weights	weights for the model, not necessarily the architecture (used during the learning/training process, could also be the final state)					Evaluation:Methods comparison	Could be combined with results	
+				links	links to other resources such as datasets, applications or models within bioimage.io							
+												
+												
+				format_version	the format version of the schema (not the dataset version)							
