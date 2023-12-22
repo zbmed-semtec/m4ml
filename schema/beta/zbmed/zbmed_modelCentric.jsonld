@@ -115,6 +115,44 @@
       ]
     },
     {
+      "@id": "m4ml:fineTunedBy",
+      "@type": "rdf:Property",
+      "rdfs:comment": "ML Software fine-tuning this ML model.",
+      "rdfs:label": "fineTunedBy",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "m4ml:MLSoftwareSourceCode"
+         },
+         {
+          "@id": "m4ml:MLSoftwareApplication"
+        }
+      ]
+    },
+    {
+      "@id": "m4ml:generatedBy",
+      "@type": "rdf:Property",
+      "rdfs:comment": "ML software used to create this ML model.",
+      "rdfs:label": "generatedBy",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "m4ml:MLSoftwareSourceCode"
+         },
+         {
+          "@id": "m4ml:MLSoftwareApplication"
+        }
+      ]
+    },
+    {
       "@id": "m4ml:hyperparameter",
       "@type": "rdf:Property",
       "rdfs:comment": "Hyperparameters used by the software for the training process. As the same software can be used for multiple runs (e.g., to find the  best performing model), no actual values for the hyperparameters should be specified here, only the hyperparameters themselves. For instance windowSize (a number) or kernelSize (a number).",
@@ -216,6 +254,25 @@
          {
            "@id": "schema:Dataset"
          }
+      ]
+    },
+    {
+      "@id": "m4ml:retrainedBy",
+      "@type": "rdf:Property",
+      "rdfs:comment": "ML software used to re-train this ML model.",
+      "rdfs:label": "retrainedBy",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "m4ml:MLSoftwareSourceCode"
+         },
+         {
+          "@id": "m4ml:MLSoftwareApplication"
+        }
       ]
     }
   ]
