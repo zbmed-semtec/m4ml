@@ -364,6 +364,58 @@
           "@id": "bs:FormalParameter"
         }
       ]
+    },
+
+
+    {
+      "@id": "m4ml:ethicalLegalSocial",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Considerations wrt ethical, legal and social aspects.",
+      "rdfs:label": "ethicalLegalSocial",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        }
+      ]
+    },
+    {
+      "@id": "m4ml:intendedUse",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case.",
+      "rdfs:label": "intendedUse",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        }
+      ]
     }
   ]
 }
