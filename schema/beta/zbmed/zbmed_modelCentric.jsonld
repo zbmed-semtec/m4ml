@@ -416,6 +416,162 @@
           "@id": "schema:DefinedTerm"
         }
       ]
+    },
+
+
+    {
+      "@id": "codemeta:contIntegration",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to continuous integration service.",
+      "rdfs:label": "contIntegration",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },
+    {
+      "@id": "codemeta:buildInstructions",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to installation instructions/documentation",
+      "rdfs:label": "buildInstructions",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },
+    {
+      "@id": "codemeta:developmentStatus",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Description of development status, e.g. Active, inactive, suspended. See <a href='http://www.repostatus.org/' target='_blank'>repostatus.org</a>",
+      "rdfs:label": "developmentStatus",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        }
+      ]
+    },
+    {
+      "@id": "codemeta:embargoDate",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication).",
+      "rdfs:label": "embargoDate",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Date"
+        }
+      ]
+    },
+    {
+      "@id": "codemeta:issueTracker",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to software bug reporting or issue tracking system.",
+      "rdfs:label": "issueTracker",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },
+    {
+      "@id": "codemeta:referencePublication",
+      "@type": "rdf:Property",
+      "rdfs:comment": "An academic publication related to the software.",
+      "rdfs:label": "referencePublication",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:ScholarlyArticle"
+        }
+      ]
+    },
+    {
+      "@id": "codemeta:readme",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to software Readme file",
+      "rdfs:label": "readme",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        }
+      ]
     }
   ]
 }
