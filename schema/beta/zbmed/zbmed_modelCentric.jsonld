@@ -112,7 +112,7 @@
       "@id": "m4ml:hyperparameter",
       "@type": "rdf:Property",
       "rdfs:comment": "Hyperparameters used by the software for the training process. As the same software can be used for multiple runs (e.g., to find the  best performing model), no actual values for the hyperparameters should be specified here, only the hyperparameters themselves. For instance windowSize (a number) or kernelSize (a number).",
-      "rdfs:label": "hyperparameters",
+      "rdfs:label": "hyperparameter",
       "schema:domainIncludes": [
         {
           "@id": "m4ml:MLSoftwareSourceCode"
@@ -134,7 +134,7 @@
       "@id": "m4ml:evaluationMetric",
       "@type": "rdf:Property",
       "rdfs:comment": "Evaluation metrics used by the software for the training process. As the same software can be used for multiple runs (e.g., to find the  best performing model), no actual values for the evaluation metrics should be specified here, only the metrics themselves. For instance precision (a positive number).",
-      "rdfs:label": "evaluationMetrics",
+      "rdfs:label": "evaluationMetric",
       "schema:domainIncludes": [
         {
           "@id": "m4ml:MLSoftwareSourceCode"
@@ -225,7 +225,7 @@
       "@id": "m4ml:evaluationMetricValue",
       "@type": "rdf:Property",
       "rdfs:comment": "Evaluation metric values obtained when creating this ML model. There should be a correspondence with the evaluation metrics declared by the ML software used to create this ML model.",
-      "rdfs:label": "evaluationMetricValues",
+      "rdfs:label": "evaluationMetricValue",
       "schema:domainIncludes": [
         {
           "@id": "m4ml:MLModel"
