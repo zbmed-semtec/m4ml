@@ -6,8 +6,6 @@
     "bs": "https:/bioschemas.org/terms/",
     "codemeta": "https://w3id.org/codemeta/",
     "croissant": "https://github.com/mlcommons/croissant",
-    "maSMP": "https://discovery.biothings.io/ns/maSMP/",
-    "bstypesdraft": "https://discovery.biothings.io/ns/bioschemastypesdrafts", 
     "m4ml": "https://discovery.biothings.io/ns/m4ml/"
   },
   "@graph": [
@@ -75,9 +73,6 @@
         },
         {
           "@id": "m4ml:MLSoftwareApplication"
-        },
-        {
-          "@id": "bs:ComputationalWorkflow"
         }
       ],
       "schema:rangeIncludes": [
@@ -97,9 +92,6 @@
         },
         {
           "@id": "m4ml:MLSoftwareApplication"
-        },
-        {
-          "@id": "bs:ComputationalWorkflow"
         }
       ],
       "schema:rangeIncludes": [
@@ -395,16 +387,7 @@
           "@id": "m4ml:MLSoftwareApplication"
         },
         {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
-        },
-        {
-          "@id": "bstypesdraft:LabProtocol"
         }
       ],
       "schema:rangeIncludes": [
@@ -432,16 +415,7 @@
           "@id": "m4ml:MLSoftwareApplication"
         },
         {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
-        },
-        {
-          "@id": "bstypesdraft:LabProtocol"
         }
       ],
       "schema:rangeIncludes": [
@@ -460,12 +434,6 @@
       "rdfs:label": "contIntegration",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -481,12 +449,6 @@
       "rdfs:comment": "Link to installation instructions/documentation",
       "rdfs:label": "buildInstructions",
       "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
         {
           "@id": "m4ml:MLModel"
         }
@@ -504,12 +466,6 @@
       "rdfs:label": "developmentStatus",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -525,12 +481,6 @@
       "rdfs:comment": "Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication).",
       "rdfs:label": "embargoDate",
       "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
         {
           "@id": "m4ml:MLModel"
         }
@@ -548,12 +498,6 @@
       "rdfs:label": "issueTracker",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -570,12 +514,6 @@
       "rdfs:label": "referencePublication",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -591,12 +529,6 @@
       "rdfs:comment": "Link to software Readme file",
       "rdfs:label": "readme",
       "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:MLSoftwareApplication"
-        },
         {
           "@id": "m4ml:MLModel"
         }
