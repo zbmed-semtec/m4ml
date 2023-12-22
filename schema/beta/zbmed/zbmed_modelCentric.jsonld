@@ -57,6 +57,8 @@
       ]
     },
 
+
+    
     {
       "@id": "m4ml:deployedAt",
       "@type": "rdf:Property",
@@ -321,6 +323,46 @@
          {
            "@id": "schema:Dataset"
          }
+      ]
+    },
+
+
+    {
+      "@id": "bs:input",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Specification of a consumed input.",
+      "rdfs:label": "input",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "bs:FormalParameter"
+        }
+      ]
+    },
+    {
+      "@id": "bs:output",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Specification of a produced output.",
+      "rdfs:label": "output",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "bs:FormalParameter"
+        }
       ]
     }
   ]
