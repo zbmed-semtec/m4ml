@@ -80,6 +80,41 @@
       ]
     },
     {
+      "@id": "m4ml:evaluationMetricValue",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Evaluation metric values obtained when creating this ML model. There should be a correspondence with the evaluation metrics declared by the ML software used to create this ML model.",
+      "rdfs:label": "evaluationMetricValue",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModel"
+        },
+        {
+          "@id": "m4ml:MLModelValidationAction"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:PropertyValue"
+        }
+      ]
+    },
+    {
+      "@id": "m4ml:deployedAt",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Platform, website, webservice or similar where this ML model has been deployed. There could be deployments that this ML model is not aware of (e.g., done by third-parties).",
+      "rdfs:label": "deployedAt",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "schema:Thing"
+         }
+      ]
+    },
+    {
       "@id": "m4ml:hyperparameter",
       "@type": "rdf:Property",
       "rdfs:comment": "Hyperparameters used by the software for the training process. As the same software can be used for multiple runs (e.g., to find the  best performing model), no actual values for the hyperparameters should be specified here, only the hyperparameters themselves. For instance windowSize (a number) or kernelSize (a number).",
@@ -101,6 +136,22 @@
         }
       ]
     },
+    {
+      "@id": "m4ml:hyperparameterValue",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Hyperparameter values used to create this ML model. There should be a correspondence with the hyperparameters declared by the ML software used to create this ML model.",
+      "rdfs:label": "hyperparameterValue",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "schema:PropertyValue"
+         }
+      ]
+    },    
     {
       "@id": "m4ml:mlAlgorithm",
       "@type": "rdf:Property",
@@ -149,6 +200,22 @@
         {
           "@id": "schema:DefinedTerm"
         }
+      ]
+    },
+    {
+      "@id": "m4ml:optimizedFor",
+      "@type": "rdf:Property",
+      "rdfs:comment": "AI-ready dataset (after pre-processing) used by the ML software for the training and optimization of this ML model.",
+      "rdfs:label": "optimizedFor",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "schema:Dataset"
+         }
       ]
     }
   ]
