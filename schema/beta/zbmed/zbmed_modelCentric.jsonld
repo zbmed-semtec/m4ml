@@ -55,6 +55,101 @@
       "schemaVersion": [
         "https://schema.org/docs/releases.html#v23.0"
       ]
+    },
+
+    {
+      "@id": "m4ml:evaluationMetric",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Evaluation metrics used by the software for the training process. As the same software can be used for multiple runs (e.g., to find the  best performing model), no actual values for the evaluation metrics should be specified here, only the metrics themselves. For instance precision (a positive number).",
+      "rdfs:label": "evaluationMetric",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "bs:FormalParameter"
+        },
+        {
+          "@id": "schema:PropertyValue"
+        }
+      ]
+    },
+    {
+      "@id": "m4ml:hyperparameter",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Hyperparameters used by the software for the training process. As the same software can be used for multiple runs (e.g., to find the  best performing model), no actual values for the hyperparameters should be specified here, only the hyperparameters themselves. For instance windowSize (a number) or kernelSize (a number).",
+      "rdfs:label": "hyperparameter",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "bs:FormalParameter"
+        },
+        {
+          "@id": "schema:PropertyValue"
+        }
+      ]
+    },
+    {
+      "@id": "m4ml:mlAlgorithm",
+      "@type": "rdf:Property",
+      "rdfs:comment": "ML algorithm used to solve the task. For instance logistic regression or random forests.",
+      "rdfs:label": "mlAlgorithm",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        }
+      ]
+    },
+    {
+      "@id": "m4ml:mlTask",
+      "@type": "rdf:Property",
+      "rdfs:comment": "ML task addressed by this Ml software or model. For instance binary classification.",
+      "rdfs:label": "mlTask",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        }
+      ]
     }
   ]
 }
