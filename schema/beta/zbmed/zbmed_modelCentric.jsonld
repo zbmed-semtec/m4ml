@@ -58,6 +58,22 @@
     },
 
     {
+      "@id": "m4ml:deployedAt",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Platform, website, webservice or similar where this ML model has been deployed. There could be deployments that this ML model is not aware of (e.g., done by third-parties).",
+      "rdfs:label": "deployedAt",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModel"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "schema:Thing"
+         }
+      ]
+    },
+    {
       "@id": "m4ml:evaluationMetric",
       "@type": "rdf:Property",
       "rdfs:comment": "Evaluation metrics used by the software for the training process. As the same software can be used for multiple runs (e.g., to find the  best performing model), no actual values for the evaluation metrics should be specified here, only the metrics themselves. For instance precision (a positive number).",
@@ -99,19 +115,19 @@
       ]
     },
     {
-      "@id": "m4ml:deployedAt",
+      "@id": "m4ml:externalValidation",
       "@type": "rdf:Property",
-      "rdfs:comment": "Platform, website, webservice or similar where this ML model has been deployed. There could be deployments that this ML model is not aware of (e.g., done by third-parties).",
-      "rdfs:label": "deployedAt",
+      "rdfs:comment": "A validation action using this ML model with an external validation dataset (e.g., when new datasets are produced from experiments and were not used as part of the learning process of this ML model). There could be external validations that this ML model is not aware of (e.g., done by third-parties).",
+      "rdfs:label": "externalValidation",
       "schema:domainIncludes": [
         {
           "@id": "m4ml:MLModel"
         }
       ],
       "schema:rangeIncludes": [
-         {
-           "@id": "schema:Thing"
-         }
+        {
+          "@id": "m4ml:MLModelValidationAction"
+        }
       ]
     },
     {
@@ -273,6 +289,38 @@
          {
           "@id": "m4ml:MLSoftwareApplication"
         }
+      ]
+    },
+    {
+      "@id": "m4ml:validatesMLModel",
+      "@type": "rdf:Property",
+      "rdfs:comment": "ML model validated by this validation action.",
+      "rdfs:label": "validatesMLModel",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModelValidationAction"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "m4ml:MLModel"
+         }
+      ]
+    },
+    {
+      "@id": "m4ml:validationData",
+      "@type": "rdf:Property",
+      "rdfs:comment": "AI-ready dataset (after pre-processing) used by the ML validation action to perform an external validation with an unseen dataset.",
+      "rdfs:label": "validationData",
+      "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLModelValidationAction"
+        }
+      ],
+      "schema:rangeIncludes": [
+         {
+           "@id": "schema:Dataset"
+         }
       ]
     }
   ]
