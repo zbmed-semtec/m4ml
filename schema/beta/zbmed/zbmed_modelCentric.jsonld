@@ -63,7 +63,7 @@
 
 
     {
-      "@id": "m4ml:input",
+      "@id": "bs:input",
       "@type": "rdf:Property",
       "rdfs:comment": "Specification of a consumed input.",
       "rdfs:label": "input",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "@id": "m4ml:output",
+      "@id": "bs:output",
       "@type": "rdf:Property",
       "rdfs:comment": "Specification of a produced output.",
       "rdfs:label": "output",
@@ -434,6 +434,12 @@
       "rdfs:label": "contIntegration",
       "schema:domainIncludes": [
         {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -449,6 +455,12 @@
       "rdfs:comment": "Link to installation instructions/documentation",
       "rdfs:label": "buildInstructions",
       "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
         {
           "@id": "m4ml:MLModel"
         }
@@ -466,6 +478,12 @@
       "rdfs:label": "developmentStatus",
       "schema:domainIncludes": [
         {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -481,6 +499,12 @@
       "rdfs:comment": "Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication).",
       "rdfs:label": "embargoDate",
       "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
         {
           "@id": "m4ml:MLModel"
         }
@@ -498,6 +522,12 @@
       "rdfs:label": "issueTracker",
       "schema:domainIncludes": [
         {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -514,6 +544,12 @@
       "rdfs:label": "referencePublication",
       "schema:domainIncludes": [
         {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
+        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -529,6 +565,12 @@
       "rdfs:comment": "Link to software Readme file",
       "rdfs:label": "readme",
       "schema:domainIncludes": [
+        {
+          "@id": "m4ml:MLSoftwareSourceCode"
+        },
+        {
+          "@id": "m4ml:MLSoftwareApplication"
+        },
         {
           "@id": "m4ml:MLModel"
         }
