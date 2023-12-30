@@ -7,4 +7,6 @@ A first early version of the requirements for the vocabulary, and a first set of
 
 Requirements are available at [https://github.com/oeg-upm/inesdata-ml-schema/tree/main/requirements](https://github.com/oeg-upm/inesdata-ml-schema/tree/main/requirements)
 
-Once a first version of the vocabulary is ready, it will be added in this folder.
+**A first version of the inesdata vocabulary is available at**: [https://w3id.org/inesdata](https://w3id.org/inesdata)
+
+A sample model card annotated with the vocabulary is available here: [https://github.com/oeg-upm/inesdata-ml-schema/blob/main/example_model_card.yaml](https://github.com/oeg-upm/inesdata-ml-schema/blob/main/example_model_card.yaml)
