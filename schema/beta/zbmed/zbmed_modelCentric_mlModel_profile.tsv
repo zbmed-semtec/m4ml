@@ -1,0 +1,48 @@
+Source	Property	Range	Decription	Requirement	Cardinality
+m4ml	ethicalLegalSocial	Text	"Considerations wrt ethical, legal and social aspects."	minimum	one
+m4ml	evaluationMetricValue	PropertyValue	Evaluation metric values obtained when creating this ML model. There should be a correspondence with the evaluation metrics declared by the ML software used to create this ML model.	minimum	many
+m4ml	generatedBy	SoftwareAppiclation or SoftwareSourceCode	ML software used to create this ML model.	minimum	one
+m4ml	hyperparameterValue	PropertyValue	Hyperparameter values used to create this ML model. There should be a correspondence with the hyperparameters declared by the ML software used to create this ML model.	minimum	many
+m4ml	intendedUse	Text or DefinedTerm or URL	"Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case."	minimum	one
+m4ml	mlAlgorithm	Text or DefinedTerm	ML algorithm used to solve the task. For instance logistic regression or random forests.	minimum	one
+m4ml	mlTask	Text or DefinedTerm	ML task addressed by this Ml software or model. For instance binary classification.	minimum	one
+m4ml	optimizedFor	Dataset	AI-ready dataset (after pre-processing) used by the ML software for the training and optimization of this ML model.	minimum	one
+schema	author	Organization or Person	The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.	minimum	many
+schema	description	Text or TextObject	A description of the item.	minimum	one
+schema	name	Text	The name of the item.	minimum	one
+schema	url	URL	URL of the item.	minimum	many
+codemeta	buildInstructions	URL	Link to installation instructions/documentation.	optional	many
+codemeta	contIntegration	URL	Link to continuous integration service.	optional	many
+codemeta	embargoDate	Date	"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)."	optional	one
+codemeta	issueTracker	URL	Link to software bug reporting or issue tracking system.	optional	many
+m4ml	deployedAt	Thing	"Platform, website, webservice or similar where this ML model has been deployed. There could be deployments that this ML model is not aware of (e.g., done by third-parties)."	optional	many
+m4ml	fineTunedBy	SoftwareAppiclation or SoftwareSourceCode	ML Software fine-tuning this ML model.	optional	many
+m4ml	retrainedBy	SoftwareAppiclation or SoftwareSourceCode	ML software used to re-train this ML model.	optional	many
+schema	conditionsOfAccess	Text	"Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an [[ArchiveComponent]] held by an [[ArchiveOrganization]]. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.\\n\\nFor example \""Available by appointment from the Reading Room\"" or \""Accessible only from logged-in accounts \"". "	optional	many
+schema	contributor	Organization or Person	A secondary contributor to the CreativeWork or Event.	optional	many
+schema	copyrightHolder	Organization or Person	The party holding the legal copyright to the CreativeWork.	optional	many
+schema	dateModified	Date or DateTime	The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.	optional	one
+schema	datePublished	Date or DateTime	Date of first broadcast/publication.	optional	one
+schema	discussionUrl	URL	A link to the page containing the comments of the CreativeWork.	optional	many
+schema	installUrl	URL	"URL at which the app may be installed, if different from the URL of the item."	optional	many
+schema	isAccessibleForFree	Boolean	"A flag to signal that the item, event, or place is accessible for free."	optional	one
+schema	maintainer	Organization or Person	"A maintainer of a [[Dataset]], software package ([[SoftwareApplication]]), or other [[Project]]. A maintainer is a [[Person]] or [[Organization]] that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on \""upstream\"" sources. When [[maintainer]] is applied to a specific version of something e.g. a particular version or packaging of a [[Dataset]], it is always  possible that the upstream source has a different maintainer. The [[isBasedOn]] property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work.\n      "	optional	many
+schema	memoryRequirements	Text or URL	Minimum memory requirements.	optional	many
+schema	operatingSystem	Text	"Operating systems supported (Windows 7, OSX 10.6, Android 1.6)."	optional	many
+schema	processorRequirements	Text	Processor architecture required to run the application (e.g. IA64).	optional	many
+schema	softwareHelp	CreativeWork	Software application help.	optional	many
+schema	softwareRequirements	Text or URL	"Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime)."	optional	many
+schema	storageRequirements	Text or URL	Storage requirements (free space required).	optional	many
+codemeta	developmentStatus	Text	"Description of development status, e.g. Active, inactive, suspended. See <a href='http://www.repostatus.org/' target='_blank'>repostatus.org</a>"	recommended	one
+codemeta	readme	URL	Link to software Readme file.	recommended	one
+codemeta	referencePublication	ScholarlyArticle	An academic publication related to the software.	recommended	one
+m4ml	externalValidation	m4ml:MLModelValidationAction	"A validation action using this ML model with an external validation dataset (e.g., when new datasets are produced from experiments and were not used as part of the learning process of this ML model). There could be external validations that this ML model is not aware of (e.g., done by third-parties)."	recommended	many
+schema	archivedAt	URL or WebPage	"Indicates a page or other link involved in archival of a [[CreativeWork]]. In the case of [[MediaReview]], the items in a [[MediaReviewItem]] may often become inaccessible, but be archived by archival, journalistic, activist, or law enforcement organizations. In such cases, the referenced page may not directly publish the content."	recommended	many
+schema	citation	CreativeWork or Text	"A citation or reference to another creative work, such as another publication, web page, scholarly article, etc."	recommended	many
+schema	funding	Grant	A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo. Inverse property: fundedItem	recommended	many
+schema	identifier	PropertyValue or Text or URL	"The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.\n        "	recommended	many
+schema	keywords	DefinedTerm  or Text  or URL	Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.	recommended	many
+schema	license	CreativeWork or URL	"A license document that applies to this content, typically indicated by URL."	recommended	one
+schema	releaseNotes	Text or URL	Description of what changed in this version.	recommended	one
+schema	sameAs	URL	"URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."	recommended	many
+schema	softwareVersion	Text	Version of the software instance.	recommended	one
