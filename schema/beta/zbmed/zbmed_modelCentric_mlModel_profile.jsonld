@@ -167,6 +167,10 @@
             "description": "A link to the page containing the comments of the CreativeWork.",
             "owl:cardinality": "many"
           },
+          "funding": {
+            "description": "A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo. Inverse property: fundedItem.",
+            "owl:cardinality": "many"
+          },
           "isAccessibleForFree": {
             "description": "A flag to signal that the item, event, or place is accessible for free.",
             "owl:cardinality": "one"
@@ -225,6 +229,7 @@
           "readme",
           "archivedAt",
           "citation",
+          "funding",
           "keywords",
           "license",
           "identifier",
