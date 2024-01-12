@@ -47,9 +47,6 @@
       "schema:domainIncludes": [
         {
           "@id": "m4ml:MLModel"
-        },
-        {
-          "@id": "m4ml:MLModelValidationAction"
         }
       ],
       "schema:rangeIncludes": [
@@ -135,12 +132,6 @@
       "rdfs:label": "mlAlgorithm",
       "schema:domainIncludes": [
         {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -159,12 +150,6 @@
       "rdfs:comment": "ML task addressed by this Ml software or model. For instance binary classification.",
       "rdfs:label": "mlTask",
       "schema:domainIncludes": [
-        {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
         {
           "@id": "m4ml:MLModel"
         }
@@ -224,12 +209,6 @@
       "rdfs:label": "ethicalLegalSocial",
       "schema:domainIncludes": [
         {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -245,12 +224,6 @@
       "rdfs:comment": "Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case.",
       "rdfs:label": "intendedUse",
       "schema:domainIncludes": [
-        {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
         {
           "@id": "m4ml:MLModel"
         }
@@ -276,12 +249,6 @@
       "rdfs:label": "contIntegration",
       "schema:domainIncludes": [
         {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -297,12 +264,6 @@
       "rdfs:comment": "Link to installation instructions/documentation",
       "rdfs:label": "buildInstructions",
       "schema:domainIncludes": [
-        {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
         {
           "@id": "m4ml:MLModel"
         }
@@ -320,12 +281,6 @@
       "rdfs:label": "developmentStatus",
       "schema:domainIncludes": [
         {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -341,12 +296,6 @@
       "rdfs:comment": "Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication).",
       "rdfs:label": "embargoDate",
       "schema:domainIncludes": [
-        {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
         {
           "@id": "m4ml:MLModel"
         }
@@ -364,12 +313,6 @@
       "rdfs:label": "issueTracker",
       "schema:domainIncludes": [
         {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
-        {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -385,13 +328,7 @@
       "rdfs:comment": "An academic publication related to the software.",
       "rdfs:label": "referencePublication",
       "schema:domainIncludes": [
-        {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
-        {
+       {
           "@id": "m4ml:MLModel"
         }
       ],
@@ -407,12 +344,6 @@
       "rdfs:comment": "Link to software Readme file",
       "rdfs:label": "readme",
       "schema:domainIncludes": [
-        {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
-        },
         {
           "@id": "m4ml:MLModel"
         }
