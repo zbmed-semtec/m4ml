@@ -4,7 +4,7 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "bs": "https:/bioschemas.org/terms/",
-    "codemeta": "https://w3id.org/codemeta/",
+    "codemeta": "https://w3id.org/codemeta/terms/",
     "m4ml": "https://discovery.biothings.io/view/m4ml/"
   },
   "@graph": [

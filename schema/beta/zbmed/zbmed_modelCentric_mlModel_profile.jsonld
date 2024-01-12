@@ -4,11 +4,11 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "codemeta": "https://w3id.org/codemeta/terms/",
-    "ml4ml": "https://discovery.biothings.io/view/ml4ml/"
+    "m4ml": "https://discovery.biothings.io/view/m4ml/"
   },
   "@graph": [
     {
-      "@id": "ml4ml:MLModel",
+      "@id": "m4ml:MLModel",
       "@type": "rdfs:Class",
       "rdfs:comment": "An 'executable' ML model that could be used by third-parties for direct use, deployment, fine-tuning, transfer learning, etc.",
       "rdfs:label": "MLModel",
@@ -67,31 +67,31 @@
             "description": "Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case.",
             "owl:cardinality": "one"
           },
-          "codemeta:contIntegration": {
+          "contIntegration": {
             "description": "Link to continuous integration service.",
             "owl:cardinality": "many"
           },
-          "codemeta:buildInstructions": {
+          "buildInstructions": {
             "description": "Link to installation instructions/documentation.",
             "owl:cardinality": "many"
           },
-          "codemeta:developmentStatus": {
+          "developmentStatus": {
             "description": "Description of development status, e.g. Active, inactive, suspended. See <a href='http://www.repostatus.org/' target='_blank'>repostatus.org</a>",
             "owl:cardinality": "one"
           },
-          "codemeta:embargoDate": {
+          "embargoDate": {
             "description": "Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication).",
             "owl:cardinality": "one"
           },
-          "codemeta:issueTracker": {
+          "issueTracker": {
             "description": "Link to software bug reporting or issue tracking system.",
             "owl:cardinality": "many"
           },
-          "codemeta:referencePublication": {
+          "referencePublication": {
             "description": "An academic publication related to the software.",
             "owl:cardinality": "one"
           },
-          "codemeta:readme": {
+          "readme": {
             "description": "Link to software Readme file.",
             "owl:cardinality": "one"
           },
@@ -220,9 +220,9 @@
         ],
         "recommended": [
           "externalValidation",
-          "codemeta:developmentStatus",
-          "codemeta:referencePublication",
-          "codemeta:readme",
+          "developmentStatus",
+          "referencePublication",
+          "readme",
           "archivedAt",
           "citation",
           "keywords",
@@ -236,10 +236,10 @@
           "deployedAt",
           "fineTunedBy",
           "retrainedBy",
-          "codemeta:contIntegration",
-          "codemeta:buildInstructions",
-          "codemeta:embargoDate",
-          "codemeta:issueTracker",
+          "contIntegration",
+          "buildInstructions",
+          "embargoDate",
+          "issueTracker",
           "softwareHelp",
           "conditionsOfAccess",
           "contributor",
@@ -262,12 +262,12 @@
       ]
     },
     {
-      "@id": "ml4ml:deployedAt",
+      "@id": "m4ml:deployedAt",
       "@type": "rdf:Property",
       "rdfs:comment": "Platform, website, webservice or similar where this ML model has been deployed. There could be deployments that this ML model is not aware of (e.g., done by third-parties).",
       "rdfs:label": "deployedAt",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -276,12 +276,12 @@
       ]
     },
     {
-      "@id": "ml4ml:evaluationMetricValue",
+      "@id": "m4ml:evaluationMetricValue",
       "@type": "rdf:Property",
       "rdfs:comment": "Evaluation metric values obtained when creating this ML model. There should be a correspondence with the evaluation metrics declared by the ML software used to create this ML model.",
       "rdfs:label": "evaluationMetricValue",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -290,12 +290,12 @@
       ]
     },
     {
-      "@id": "ml4ml:externalValidation",
+      "@id": "m4ml:externalValidation",
       "@type": "rdf:Property",
       "rdfs:comment": "A validation action using this ML model with an external validation dataset (e.g., when new datasets are produced from experiments and were not used as part of the learning process of this ML model). There could be external validations that this ML model is not aware of (e.g., done by third-parties).",
       "rdfs:label": "externalValidation",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -304,12 +304,12 @@
       ]
     },
     {
-      "@id": "ml4ml:fineTunedBy",
+      "@id": "m4ml:fineTunedBy",
       "@type": "rdf:Property",
       "rdfs:comment": "ML Software fine-tuning this ML model.",
       "rdfs:label": "fineTunedBy",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -321,12 +321,12 @@
       ]
     },
     {
-      "@id": "ml4ml:generatedBy",
+      "@id": "m4ml:generatedBy",
       "@type": "rdf:Property",
       "rdfs:comment": "ML software used to create this ML model.",
       "rdfs:label": "generatedBy",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -338,12 +338,12 @@
       ]
     },
     {
-      "@id": "ml4ml:hyperparameterValue",
+      "@id": "m4ml:hyperparameterValue",
       "@type": "rdf:Property",
       "rdfs:comment": "Hyperparameter values used to create this ML model. There should be a correspondence with the hyperparameters declared by the ML software used to create this ML model.",
       "rdfs:label": "hyperparameterValue",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -352,12 +352,12 @@
       ]
     },
     {
-      "@id": "ml4ml:mlAlgorithm",
+      "@id": "m4ml:mlAlgorithm",
       "@type": "rdf:Property",
       "rdfs:comment": "ML algorithm used to solve the task. For instance logistic regression or random forests.",
       "rdfs:label": "mlAlgorithm",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -369,12 +369,12 @@
       ]
     },
     {
-      "@id": "ml4ml:mlTask",
+      "@id": "m4ml:mlTask",
       "@type": "rdf:Property",
       "rdfs:comment": "ML task addressed by this Ml software or model. For instance binary classification.",
       "rdfs:label": "mlTask",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -386,12 +386,12 @@
       ]
     },
     {
-      "@id": "ml4ml:optimizedFor",
+      "@id": "m4ml:optimizedFor",
       "@type": "rdf:Property",
       "rdfs:comment": "AI-ready dataset (after pre-processing) used by the ML software for the training and optimization of this ML model.",
       "rdfs:label": "optimizedFor",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -400,12 +400,12 @@
       ]
     },
     {
-      "@id": "ml4ml:retrainedBy",
+      "@id": "m4ml:retrainedBy",
       "@type": "rdf:Property",
       "rdfs:comment": "ML software used to re-train this ML model.",
       "rdfs:label": "retrainedBy",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -417,12 +417,12 @@
       ]
     },
     {
-      "@id": "ml4ml:ethicalLegalSocial",
+      "@id": "m4ml:ethicalLegalSocial",
       "@type": "rdf:Property",
       "rdfs:comment": "Considerations wrt ethical, legal and social aspects.",
       "rdfs:label": "ethicalLegalSocial",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -431,12 +431,12 @@
       ]
     },
     {
-      "@id": "ml4ml:intendedUse",
+      "@id": "m4ml:intendedUse",
       "@type": "rdf:Property",
       "rdfs:comment": "Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case.",
       "rdfs:label": "intendedUse",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -451,12 +451,12 @@
       ]
     },
     {
-      "@id": "ml4ml:codemeta:contIntegration",
+      "@id": "codemeta:contIntegration",
       "@type": "rdf:Property",
       "rdfs:comment": "Link to continuous integration service.",
-      "rdfs:label": "codemeta:contIntegration",
+      "rdfs:label": "contIntegration",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -465,12 +465,12 @@
       ]
     },
     {
-      "@id": "ml4ml:codemeta:buildInstructions",
+      "@id": "codemeta:buildInstructions",
       "@type": "rdf:Property",
       "rdfs:comment": "Link to installation instructions/documentation.",
-      "rdfs:label": "codemeta:buildInstructions",
+      "rdfs:label": "buildInstructions",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -479,12 +479,12 @@
       ]
     },
     {
-      "@id": "ml4ml:codemeta:developmentStatus",
+      "@id": "codemeta:developmentStatus",
       "@type": "rdf:Property",
       "rdfs:comment": "Description of development status, e.g. Active, inactive, suspended. See <a href='http://www.repostatus.org/' target='_blank'>repostatus.org</a>",
-      "rdfs:label": "codemeta:developmentStatus",
+      "rdfs:label": "developmentStatus",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -493,12 +493,12 @@
       ]
     },
     {
-      "@id": "ml4ml:codemeta:embargoDate",
+      "@id": "codemeta:embargoDate",
       "@type": "rdf:Property",
       "rdfs:comment": "Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication).",
-      "rdfs:label": "codemeta:embargoDate",
+      "rdfs:label": "embargoDate",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -507,12 +507,12 @@
       ]
     },
     {
-      "@id": "ml4ml:codemeta:issueTracker",
+      "@id": "codemeta:issueTracker",
       "@type": "rdf:Property",
       "rdfs:comment": "Link to software bug reporting or issue tracking system.",
-      "rdfs:label": "codemeta:issueTracker",
+      "rdfs:label": "issueTracker",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -521,12 +521,12 @@
       ]
     },
     {
-      "@id": "ml4ml:codemeta:referencePublication",
+      "@id": "codemeta:referencePublication",
       "@type": "rdf:Property",
       "rdfs:comment": "An academic publication related to the software.",
-      "rdfs:label": "codemeta:referencePublication",
+      "rdfs:label": "referencePublication",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
@@ -535,12 +535,12 @@
       ]
     },
     {
-      "@id": "ml4ml:codemeta:readme",
+      "@id": "codemeta:readme",
       "@type": "rdf:Property",
       "rdfs:comment": "Link to software Readme file.",
-      "rdfs:label": "codemeta:readme",
+      "rdfs:label": "readme",
       "schema:domainIncludes": {
-        "@id": "ml4ml:MLModel"
+        "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
