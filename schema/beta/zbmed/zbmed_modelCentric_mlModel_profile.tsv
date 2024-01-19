@@ -1,7 +1,7 @@
 Source	Property	Range	Decription	Requirement	Cardinality
 m4ml	ethicalLegalSocial	Text	"Considerations wrt ethical, legal and social aspects."	minimum	one
 m4ml	evaluationMetricValue	PropertyValue	Evaluation metric values obtained when creating this ML model. There should be a correspondence with the evaluation metrics declared by the ML software used to create this ML model.	minimum	many
-m4ml	generatedBy	SoftwareAppiclation or SoftwareSourceCode	ML software used to create this ML model.	minimum	one
+m4ml	generatedBy	SoftwareApplication or SoftwareSourceCode	ML software used to create this ML model.	minimum	one
 m4ml	hyperparameterValue	PropertyValue	Hyperparameter values used to create this ML model. There should be a correspondence with the hyperparameters declared by the ML software used to create this ML model.	minimum	many
 m4ml	intendedUse	Text or DefinedTerm or URL	"Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case."	minimum	one
 m4ml	mlAlgorithm	Text or DefinedTerm	ML algorithm used to solve the task. For instance logistic regression or random forests.	minimum	one
@@ -16,8 +16,8 @@ codemeta	contIntegration	URL	Link to continuous integration service.	optional	ma
 codemeta	embargoDate	Date	"Software may be embargoed from public access until a specified date (e.g. pending publication, 1 year from publication)."	optional	one
 codemeta	issueTracker	URL	Link to software bug reporting or issue tracking system.	optional	many
 m4ml	deployedAt	Thing	"Platform, website, webservice or similar where this ML model has been deployed. There could be deployments that this ML model is not aware of (e.g., done by third-parties)."	optional	many
-m4ml	fineTunedBy	SoftwareAppiclation or SoftwareSourceCode	ML Software fine-tuning this ML model.	optional	many
-m4ml	retrainedBy	SoftwareAppiclation or SoftwareSourceCode	ML software used to re-train this ML model.	optional	many
+m4ml	fineTunedBy	SoftwareApplication or SoftwareSourceCode	ML Software fine-tuning this ML model.	optional	many
+m4ml	retrainedBy	SoftwareApplication or SoftwareSourceCode	ML software used to re-train this ML model.	optional	many
 schema	conditionsOfAccess	Text	"Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an [[ArchiveComponent]] held by an [[ArchiveOrganization]]. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.\\n\\nFor example \""Available by appointment from the Reading Room\"" or \""Accessible only from logged-in accounts \"". "	optional	many
 schema	contributor	Organization or Person	A secondary contributor to the CreativeWork or Event.	optional	many
 schema	copyrightHolder	Organization or Person	The party holding the legal copyright to the CreativeWork.	optional	many
