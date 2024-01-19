@@ -46,7 +46,7 @@ Here we also include usage recommendation, particularly for the ML model type
     <tr>
         <td>m4ml</td>
         <td>generatedBy</td>
-        <td>SoftwareAppiclation or SoftwareSourceCode</td>
+        <td>SoftwareApplication or SoftwareSourceCode</td>
         <td>ML software used to create this ML model.</td>
         <td>minimum</td>
         <td>one</td>
@@ -270,7 +270,7 @@ Here we also include usage recommendation, particularly for the ML model type
     <tr>
         <td>m4ml</td>
         <td>fineTunedBy</td>
-        <td>SoftwareAppiclation or SoftwareSourceCode</td>
+        <td>SoftwareApplication or SoftwareSourceCode</td>
         <td>ML Software fine-tuning this ML model.</td>
         <td>optional</td>
         <td>many</td>
@@ -278,7 +278,7 @@ Here we also include usage recommendation, particularly for the ML model type
     <tr>
         <td>m4ml</td>
         <td>retrainedBy</td>
-        <td>SoftwareAppiclation or SoftwareSourceCode</td>
+        <td>SoftwareApplication or SoftwareSourceCode</td>
         <td>ML software used to re-train this ML model.</td>
         <td>optional</td>
         <td>many</td>
