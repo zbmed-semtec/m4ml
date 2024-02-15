@@ -13,21 +13,21 @@ In additoin to regular meetings hosted individually by the three communities, th
 
 ## Contributions
 The three communities acnd corresonding members have somehow contributed to this work. Here we mention individuals that have directly contributed so far to literature review, crosswalks or schema drafts. In alphabetical order:
-* Fynn Beuttenmüller[0000-0002-8567-6389](https://europepmc.org/authors/0000-0002-8567-6389), crosswalks
-* Leyla Jael Castro[0000-0003-3986-0510](https://orcid.org/0000-0003-3986-0510), lierrature review, crosswalks, schema drafts
+* Fynn Beuttenmüller [0000-0002-8567-6389](https://orcid.org/0000-0002-8567-6389), crosswalks
+* Leyla Jael Castro [0000-0003-3986-0510](https://orcid.org/0000-0003-3986-0510), literature review, crosswalks, schema drafts
 * Marisa Conte, literature review
-* Zongxiong Chen4[0000-0003-2452-0572](https://orcid.org/0000-0003-2452-0572), crosswalks
-* Sefika Efeoglu[0000-0002-9232-4840], crosswalks
-* Daniel Garijo[0000-0003-0454-7145], lierrature review, crosswalks, schema drafts
+* Zongxiong Chen [0000-0003-2452-0572](https://orcid.org/0000-0003-2452-0572), crosswalks
+* Sefika Efeoglu [0000-0002-9232-4840](https://orcid.org/0000-0002-9232-4840), crosswalks
+* Daniel Garijo [0000-0003-0454-7145], lierrature review, crosswalks, schema drafts
+* Fidan Limani [0000−0002−5835−2784](https://orcid.org/0000-0002-5835-2784), literature review
 * Line Pouchard, literature review
-* Fotis Psomopoulos[0000-0002-0222-4273], crosswalks
-* Dietrich Rebholz-Schuhmann[0000-0002-1018-0370](https://orcid.org/0000-0002-1018-0370), schema drafts
-* Beatriz Serrano-Solano9[0000-0002-5862-6132], crosswalks
-* Kirubel Biruk Shiferaw[0000-0002-7411-1411], crosswalks
-* Dhwani Solanki[0009-0004-1529-0095], lierature review, crosswalks, schema drafts
-* Bianca Wentzel[0000-0002-9218-5676], crosswalks
-* Yue Zhang[0009-0007-6432-1259], crosswalks
-* Fidan Limani [0000−0002−5835−2784](https://orcid.org/my-orcid?orcid=0000-0002-5835-2784), literature review
+* Fotis Psomopoulos [0000-0002-0222-4273](https://orcid.org/0000-0002-0222-4273), crosswalks
+* Dietrich Rebholz-Schuhmann [0000-0002-1018-0370](https://orcid.org/0000-0002-1018-0370), schema drafts
+* Beatriz Serrano-Solano [0000-0002-5862-6132](https://orcid.org/0000-0002-5862-6132), crosswalks
+* Kirubel Biruk Shiferaw [0000-0002-7411-1411](https://orcid.org/0000-0002-7411-1411), crosswalks
+* Dhwani Solanki [0009-0004-1529-0095](https://orcid.org/0009-0004-1529-0095), literature review, crosswalks, schema drafts
+* Bianca Wentzel [0000-0002-9218-5676](https://orcid.org/0000-0002-9218-5676), crosswalks
+* Yue Zhang [0009-0007-6432-1259](https://orcid.org/0009-0007-6432-1259), crosswalks
 
 
 
