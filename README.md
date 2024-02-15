@@ -24,9 +24,10 @@ The three communities acnd corresonding members have somehow contributed to this
 * Dietrich Rebholz-Schuhmann[0000-0002-1018-0370](https://orcid.org/0000-0002-1018-0370), schema drafts
 * Beatriz Serrano-Solano9[0000-0002-5862-6132], crosswalks
 * Kirubel Biruk Shiferaw[0000-0002-7411-1411], crosswalks
-* Dhwani Solanki[0009-0004-1529-0095], lierrature review, crosswalks, schema drafts
+* Dhwani Solanki[0009-0004-1529-0095], lierature review, crosswalks, schema drafts
 * Bianca Wentzel[0000-0002-9218-5676], crosswalks
 * Yue Zhang[0009-0007-6432-1259], crosswalks
+* Fidan Limani [0000−0002−5835−2784](https://orcid.org/my-orcid?orcid=0000-0002-5835-2784), literature review
 
 
 
