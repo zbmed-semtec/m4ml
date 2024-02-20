@@ -1,22 +1,12 @@
 # Beta draft proposal for discussion
 
-Here we presented a beta draft proposal prepared by ZB MED to be presented to the community at the beginning of 2024 for discussion. This beta draft is not intended for use yet.
+Here we presented a beta draft proposal prepared by ZB MED to be presented to the community at the beginning of 2024 for discussion. This beta draft is not intended for use yet but for discussions, harmonization and improvment before being officially released.
 
-![Beta draft proposal by ZB MED](./MetadataforMLModels_ZBMED_draft_proposal.drawio.png)
+![Beta draft proposal by ZB MED](./diagram/MetadataforMLModels_ZBMED_draft_proposal_modelCentricWithAction.drawio.png)
 
-And a more model-centric version (removing the action that generates the ML model and moving the corresponding properties to MLModel)
+Types and properties can be visualized in the Data Discovery Engine (DDE) at https://discovery.biothings.io/view/m4ml/.
 
-![Beta model-centric draft proposal by ZB MED](./MetadataforMLModels_ZBMED_draft_proposal_modelCentric.drawio.png)
-
-The ML model-centric version can be visualized in the Data Discovery Engine as follows:
-* Go to https://discovery.biothings.io/schema-playground
-* Under "Visualize and Register Your Own Schema" paste the link https://raw.githubusercontent.com/zbmed-semtec/m4ml/main/schema/beta/zbmed/zbmed_modelCentric.jsonld
-* If you get a warning "Continue anyway"
-* You will get the list of types and will be able to navigate through, a scrrenshot is shown below
-
-![Beta model-centric draft proposal by ZB MED at DDE](./MetadataforMLModels_ZBMED_draft_proposal_modelCentric_at_DDE.png)
-
-Here we also include usage recommendation, particularly for the ML model type
+Here we also include usage recommendation, see https://discovery.biothings.io/view/m4mlProfiles, particularly for the ML model type
 
 <table>
     <tr>
@@ -46,8 +36,8 @@ Here we also include usage recommendation, particularly for the ML model type
     <tr>
         <td>m4ml</td>
         <td>generatedBy</td>
-        <td>SoftwareApplication or SoftwareSourceCode</td>
-        <td>ML software used to create this ML model.</td>
+        <td>MLOptimizationAction</td>
+        <td>Optimization action on an ML software used to create this ML model.</td>
         <td>minimum</td>
         <td>one</td>
     </tr>
