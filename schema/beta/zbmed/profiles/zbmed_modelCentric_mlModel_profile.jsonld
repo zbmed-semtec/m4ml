@@ -328,17 +328,14 @@
     {
       "@id": "m4ml:generatedBy",
       "@type": "rdf:Property",
-      "rdfs:comment": "ML software used to create this ML model.",
+      "rdfs:comment": "Optimization action on an ML software used to create this ML model.",
       "rdfs:label": "generatedBy",
       "schema:domainIncludes": {
         "@id": "m4ml:MLModel"
       },
       "schema:rangeIncludes": [
         {
-          "@id": "m4ml:MLSoftwareSourceCode"
-        },
-        {
-          "@id": "m4ml:MLSoftwareApplication"
+          "@id": "m4ml:MLOptimizationAction"
         }
       ]
     },

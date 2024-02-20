@@ -1,7 +1,7 @@
 Source	Property	Range	Decription	Requirement	Cardinality
 m4ml	ethicalLegalSocial	Text	"Considerations wrt ethical, legal and social aspects."	minimum	one
 m4ml	evaluationMetricValue	PropertyValue	Evaluation metric values obtained when creating this ML model. There should be a correspondence with the evaluation metrics declared by the ML software used to create this ML model.	minimum	many
-m4ml	generatedBy	SoftwareApplication or SoftwareSourceCode	ML software used to create this ML model.	minimum	one
+m4ml	generatedBy	MLOptimizationAction	Optimization action on an ML software used to create this ML model.	minimum	one
 m4ml	hyperparameterValue	PropertyValue	Hyperparameter values used to create this ML model. There should be a correspondence with the hyperparameters declared by the ML software used to create this ML model.	minimum	many
 m4ml	intendedUse	Text or DefinedTerm or URL	"Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case."	minimum	one
 m4ml	mlAlgorithm	Text or DefinedTerm	ML algorithm used to solve the task. For instance logistic regression or random forests.	minimum	one
