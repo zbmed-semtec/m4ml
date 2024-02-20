@@ -37,7 +37,7 @@
             "owl:cardinality": "many"
           },
           "generatedBy": {
-            "description": "ML software used to create this ML model.",
+            "description": "Optimization action on an ML software used to create this ML model.",
             "owl:cardinality": "one"
           },
           "hyperparameterValue": {
