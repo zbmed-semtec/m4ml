@@ -1,5 +1,12 @@
 # Metadata for Machine Learning (m4ml)
+![maintenance-status](https://img.shields.io/badge/maintenance-deprecated-red.svg)
+
 A data repository to store ML-related metadata crosswalks and a metadata schema based on schema.org
+
+**Not maintained 2024.06.27**
+- This repository is not currently in use. 
+- Crosswalks have been moved to https://github.com/RDA-FAIR4ML/FAIR4ML-crosswalks
+- The metadata schema is now a joint effort part of the RDA FAIR4ML IG and is available at https://github.com/RDA-FAIR4ML/FAIR4ML-schema
 
 ## Communities
 Some communities have expressed interest in a community-agreed metadata schema describing Machine Learning models, for instance the [Research Data Alliance (RDA) FAIR4ML Interest Group](https://www.rd-alliance.org/groups/fair-machine-learning-fair4ml-ig), [ELIXIR Machine Learning Focus Group (ELIXIR MLFG](https://elixir-europe.org/focus-groups/machine-learning) and the [National Research Data Infrastructure (NFDI) for Data Science and Artificial Intelligence (NFDI4DataScience, NFDI4DS)](https://www.nfdi4datascience.de/), one of the [NFDI](https://www.nfdi.de/?lang=en) consortia in Germany.
