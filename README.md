@@ -4,7 +4,7 @@
 A data repository to store ML-related metadata crosswalks and a metadata schema based on schema.org
 
 **Not maintained 2024.06.27**
-- This repository is not currently in use. 
+- This repository is not currently in use 
 - Crosswalks have been moved to https://github.com/RDA-FAIR4ML/FAIR4ML-crosswalks
 - The metadata schema is now a joint effort part of the RDA FAIR4ML IG and is available at https://github.com/RDA-FAIR4ML/FAIR4ML-schema
 
